@@ -16,6 +16,10 @@ import socket, {
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import schedulePhoto from "/public/schedule_photo.png";
+import arrowLeft from "/public/schedule_arrow__left.png";
+import arrowRight from "/public/schedule_arrow__right.png";
+
 import styles from "./Schedule.module.scss";
 
 function Schedule() {
@@ -118,7 +122,7 @@ function Schedule() {
         {schedule.map((item, index) => (
           <div key={index} className={styles.schedule_wrapper}>
             <div className={styles.schedule_photo}>
-              <img src="/schedule_photo.png" alt="photo" />
+              <img src={schedulePhoto} alt="photo" />
               <div
                 className={styles.schedule_time}
                 style={{
@@ -141,15 +145,15 @@ function Schedule() {
       </Slider>
       <button
         onClick={() => sliderRef?.slickPrev()}
-        className={styles.schedule_pgn_left}
+        className={styles.schedule_arrow__left}
       >
-        <img src="/schedule_pgn_left.png" alt="pgn" />
+        <img src={arrowLeft} alt="pgn" />
       </button>
       <button
         onClick={() => sliderRef?.slickNext()}
-        className={styles.schedule_pgn_right}
+        className={styles.schedule_arrow_right}
       >
-        <img src="/schedule_pgn_right.png" alt="pgn" />
+        <img src={arrowRight} alt="pgn" />
       </button>
     </div>
   );

@@ -1,3 +1,8 @@
+import iconInfo from "/public/chat_info_icon.png";
+import iconQuestionMark from "/public/chat_question_mark_icon.png";
+import iconSmile from "/public/chat_smile_icon.png";
+import iconSend from "/public/chat_send_icon.png";
+
 import styles from "./Chat.module.scss";
 
 const Chat = () => {
@@ -8,7 +13,7 @@ const Chat = () => {
           <div className={styles.chat_title}>
             <div className={styles.chat_title_name}>LIVE CHAT</div>
             <div className={styles.chat_title_info}>
-              <img src="/chat_info_icon.png" alt="icon" />
+              <img src={iconInfo} alt="icon" />
             </div>
           </div>
           <div className={styles.chat_body}>
@@ -35,7 +40,7 @@ const Chat = () => {
         <div className={styles.chat_input}>
           <img
             className={styles.chat_icon_faq}
-            src="/chat_question_mark_icon.png"
+            src={iconQuestionMark}
             alt="icon"
           />
 
@@ -45,16 +50,8 @@ const Chat = () => {
             placeholder="Введите сообщение"
           />
 
-          <img
-            className={styles.chat_icon_smile}
-            src="/chat_smile_icon.png"
-            alt="icon"
-          />
-          <img
-            className={styles.chat_icon_send}
-            src="/chat_send_icon.png"
-            alt="icon"
-          />
+          <img className={styles.chat_icon_smile} src={iconSmile} alt="icon" />
+          <img className={styles.chat_icon_send} src={iconSend} alt="icon" />
         </div>
       </div>
     </>
