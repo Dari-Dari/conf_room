@@ -1,0 +1,100 @@
+@import "/src/assets/styles/var.scss";
+
+.chat_container {
+  margin: 0;
+  width: 22.0625rem;
+  height: 32.6875rem;
+  background-color: #262740;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0.8125rem;
+
+  .chat_title {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #343551;
+    font-size: 1.75rem;
+    margin: 0.75rem 0.75rem 1.25rem 0.75rem;
+
+    .chat_title_name {
+      font-family: $BebasRegular;
+      color: #0bd28a;
+    }
+  }
+
+  .chat_body {
+    display: flex;
+    flex-direction: column;
+
+    .highlighted {
+      background-color: #343551;
+      border-left: 7px solid #0bd28a;
+      margin: 0;
+      margin: 0 0 1.5rem 0;
+
+      .chat_message_name {
+        margin-bottom: 0.625rem;
+        padding: 0.5rem 0 0 0.3125rem;
+        font-family: $MontserratRegular;
+        font-size: 0.875rem;
+        color: #fff;
+      }
+
+      .chat_message_text {
+        padding: 0 0 0.5rem 0.3125rem;
+        font-family: $MontserratRegular;
+        font-size: 0.75rem;
+        color: #a4a9ad;
+      }
+    }
+
+    .chat_message {
+      display: flex;
+      flex-direction: column;
+      margin: 0 0.75rem 1.5rem 0.75rem;
+
+      .chat_message_name {
+        margin-bottom: 0.625rem;
+        font-family: $MontserratRegular;
+        font-size: 0.875rem;
+        color: #fff;
+      }
+
+      .chat_message_text {
+        font-family: $MontserratRegular;
+        font-size: 0.75rem;
+        color: #a4a9ad;
+      }
+    }
+  }
+
+  .chat_input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #343551;
+    border-radius: 20px;
+    margin: 0.75rem;
+
+    .chat_input_message {
+      width: 75%;
+      outline: none;
+      background-color: #343551;
+      color: #66677e;
+      border: none;
+      font-family: $MontserratRegular;
+      font-size: 0.75rem;
+    }
+
+    .chat_icon_faq {
+      margin: 0;
+      padding: 4px 2px 4px 6px;
+    }
+
+    .chat_icon_send {
+      margin: 0;
+      padding: 4px 6px 4px 4px;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.header_container {
+  margin: 0;
+  padding: 0;
+  background-color: #262740;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+
+  .header_wrapper {
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    .header_logo {
+      display: block;
+      max-height: 100%;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+// $Ruberoid: "Ruberoid";
+$MontserratBold: "MontserratBold";
+$MontserratRegular: "MontserratRegular";
+$BebasRegular: "BebasNeueRegular";
+
+@font-face {
+  font-family: "MontserratBold";
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MontserratRegular";
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BebasNeueRegular";
+  src: url("../fonts/BebasNeueRegular.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
